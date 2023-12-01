@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body data-bs-theme="dark">
 
 
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">Helden</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
@@ -40,7 +40,7 @@
     </div>
   </nav>
 
-  <main class="container">
+  <main class="container mb-4">
 
 
 
@@ -53,7 +53,7 @@
     <h2 class="h2">Unsere Helden:</h2>
 
     <div class="row">
-      <div class="col-4 col-md-4 col-sm-2 mt-2">
+      <div class="col-md-4 col-sm-6 mt-2">
         <div class="card">
           <img src="https://picsum.photos/800/600" class="card-img-top" alt="Photo von Uwe">
           <div class="card-body">
@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <div class="col-4 col-md-4 col-sm-2 mt-2">
+      <div class="col-md-4 col-sm-6 mt-2">
         <div class="card">
           <img src="https://picsum.photos/800/600" class="card-img-top" alt="Photo von Anna">
           <div class="card-body">
@@ -75,29 +75,29 @@
         </div>
       </div>
 
-      <div class="col-4 col-md-4 col-sm-2 mt-2">
+      <div class="col-md-4 col-sm-6 mt-2">
         <div class="card">
           <img src="https://picsum.photos/800/600" class="card-img-top" alt="Photo von Alex">
           <div class="card-body">
             <h5 class="card-title">Alex</h5>
             <p class="card-text">Hier steht mein heroischer Text.</p>
-            <a href="#" class="btn btn-primary">Profil</a>
+            <a href="/Alex.html" class="btn btn-primary">Profil</a>
           </div>
         </div>
       </div>
 
-      <div class="col-4 col-md-4 col-sm-2 mt-2">
+      <div class="col-md-4 col-sm-6 mt-2">
         <div class="card">
           <img src="https://picsum.photos/800/600" class="card-img-top" alt="Photo von Sven">
           <div class="card-body">
             <h5 class="card-title">Sven</h5>
             <p class="card-text">Hier steht mein heroischer Text.</p>
-            <a href="#" class="btn btn-primary">Profil</a>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Profil Modal</a>
           </div>
         </div>
       </div>
 
-      <div class="col-4 col-md-4 col-sm-2 mt-2">
+      <div class="col-md-4 col-sm-6 mt-2">
         <div class="card">
           <img src="https://picsum.photos/800/600" class="card-img-top" alt="Photo von Kathi">
           <div class="card-body">
@@ -108,7 +108,7 @@
         </div>
       </div>
 
-      <div class="col-4 col-md-4 col-sm-2 mt-2">
+      <div class="col-md-4 col-sm-6 mt-2">
         <div class="card">
           <img src="https://picsum.photos/800/600" class="card-img-top" alt="Photo von Willi">
           <div class="card-body">
@@ -119,9 +119,47 @@
         </div>
       </div>
     </div>
-    
-
   </main>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-auto col-lg-5">
+              <img src="https://picsum.photos/600/800" class="img-fluid" alt="Photo von Uwe">
+            </div>
+            <div class="col-lg-7">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique esse dicta accusantium aliquid, debitis
+              laudantium ipsa maiores itaque. Maiores impedit animi non sapiente quibusdam saepe adipisci obcaecati,
+              corporis tempore eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur voluptates libero
+              voluptatibus id pariatur facere sequi velit impedit! Ea minus perferendis iure veritatis veniam fugiat
+              accusamus illo eos pariatur recusandae? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque
+              enim possimus consequatur adipisci doloribus porro quas tempora unde at consequuntur qui, neque illum
+              necessitatibus nostrum nulla nesciunt veniam eveniet eos. Lorem ipsum dolor sit amet, consectetur
+              adipisicing
+              elit. Debitis excepturi minus dolorem magni fuga sit a similique accusamus, laboriosam, expedita, nostrum
+              tempora reprehenderit nobis qui ipsum enim vero eveniet aperiam? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Numquam, illo explicabo vero perspiciatis officiis culpa quos aliquid ex odio a, qui
+              sint
+              reiciendis molestiae mollitia, natus itaque distinctio. Corrupti, non? Lorem ipsum dolor sit amet
+              consectetur
+              adipisicing elit. Cumque voluptatibus a eaque at soluta ea quod cum! Odio culpa velit nemo fugiat hic
+              omnis
+              iure laudantium, excepturi quisquam ratione architecto!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer bg-body-tertiary">Test</footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

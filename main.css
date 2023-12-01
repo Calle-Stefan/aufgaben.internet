@@ -1,21 +1,10 @@
-table, th, td {
-    border: 1px solid black;
-}
+.footer {
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.test {
-    width: 200px;
 }
-
-@media (max-width: 1000px) {
-    .test {
-        width: 1000px;
-    }
-    
-}
-
-@media (max-width: 1500px) {
-    .test {
-        width: 1500px;
-    }
-    
+.main {
+    min-height: calc(100vh - 56px - 100px);
 }
